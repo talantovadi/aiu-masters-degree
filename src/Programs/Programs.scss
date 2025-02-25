@@ -354,18 +354,18 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   #programs {
     h1 {
       font-size: 22px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     .program-subtext {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -377,11 +377,11 @@
     }
 
     .program-title {
-      font-size: 16px;
+      font-size: 17px;
     }
 
     .expand-btn {
-      font-size: 12px;
+      font-size: 15px;
     }
   }
 
@@ -393,7 +393,7 @@
 
   .documents-list {
     li {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
 
@@ -406,7 +406,7 @@
   }
 
   .info-text {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .foreign-note {
@@ -415,73 +415,73 @@
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
 
-@media (min-width: 320px) and (max-width: 479px) {
-  #programs {
-    h1 {
-      font-size: 18px;
-    }
+// @media (min-width: 320px) and (max-width: 479px) {
+//   #programs {
+//     h1 {
+//       font-size: 18px;
+//     }
 
-    p {
-      font-size: 12px;
-    }
+//     p {
+//       font-size: 12px;
+//     }
 
-    .program-subtext {
-      font-size: 12px;
-    }
-  }
+//     .program-subtext {
+//       font-size: 12px;
+//     }
+//   }
 
-  .program-card {
-    .program-icon {
-      width: 50px;
-      height: 50px;
-      font-size: 20px;
-    }
+//   .program-card {
+//     .program-icon {
+//       width: 50px;
+//       height: 50px;
+//       font-size: 20px;
+//     }
 
-    .program-title {
-      font-size: 14px;
-    }
+//     .program-title {
+//       font-size: 14px;
+//     }
 
-    .expand-btn {
-      font-size: 12px;
-    }
-  }
+//     .expand-btn {
+//       font-size: 12px;
+//     }
+//   }
 
-  .documents-section {
-    h4 {
-      font-size: 14px;
-    }
-  }
+//   .documents-section {
+//     h4 {
+//       font-size: 14px;
+//     }
+//   }
 
-  .documents-list {
-    li {
-      font-size: 12px;
-    }
-  }
+//   .documents-list {
+//     li {
+//       font-size: 12px;
+//     }
+//   }
 
-  .info-icon {
-    font-size: 32px;
-  }
+//   .info-icon {
+//     font-size: 32px;
+//   }
 
-  .info-title {
-    font-size: 14px;
-  }
+//   .info-title {
+//     font-size: 14px;
+//   }
 
-  .info-text {
-    font-size: 12px;
-  }
+//   .info-text {
+//     font-size: 12px;
+//   }
 
-  .foreign-note {
-    h4 {
-      font-size: 14px;
-    }
+//   .foreign-note {
+//     h4 {
+//       font-size: 14px;
+//     }
 
-    p {
-      font-size: 12px;
-    }
-  }
-}
+//     p {
+//       font-size: 12px;
+//     }
+//   }
+// }
