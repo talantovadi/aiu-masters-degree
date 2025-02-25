@@ -1,0 +1,250 @@
+#extra-curricular {
+  padding: 100px 20px;
+
+  .title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 50px;
+  }
+
+  .scroll-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 80%;
+  }
+
+  .cards-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .opportunity-card {
+    width: 330px;
+    height: 450px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0;
+    margin: 0 10px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .opportunity-image {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .opportunity-content {
+      padding: 20px;
+
+      .opportunity-title {
+        font-size: 17px;
+        font-weight: bold;
+        color: #c0392b;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .opportunity-description {
+        font-size: 14px;
+        color: #34495e;
+      }
+    }
+  }
+
+  .scroll-btn {
+    background-color: var(--dark-blue);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: #a93226;
+      cursor: pointer;
+    }
+
+    &.left {
+      position: absolute;
+      left: 5%;
+      transform: translateY(-50%);
+    }
+
+    &.right {
+      position: absolute;
+      right: 5%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .cards-container {
+      width: 90%;
+    }
+
+    .scroll-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 22px;
+
+      &.left {
+        bottom: -10%;
+        left: 35%;
+      }
+
+      &.right {
+        bottom: -10%;
+        right: 35%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cards-container {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #extra-curricular {
+    .title {
+      font-size: 32px;
+    }
+
+    .opportunity-card {
+      width: 345px;
+      height: 490px;
+      .opportunity-content {
+        .opportunity-title {
+          font-size: 18px;
+        }
+        .opportunity-description {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .scroll-btn {
+      width: 45px;
+      height: 45px;
+      font-size: 28px;
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #extra-curricular {
+    .title {
+      font-size: 30px;
+    }
+
+    .opportunity-card {
+      width: 345px;
+      height: 480px;
+      .opportunity-content {
+        .opportunity-title {
+          font-size: 18px;
+        }
+        .opportunity-description {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .scroll-btn {
+      width: 43px;
+      height: 43px;
+      font-size: 26px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  #extra-curricular {
+    .title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #extra-curricular {
+    .title {
+      font-size: 22px;
+    }
+
+    .opportunity-card {
+      width: 300px;
+      height: 405px;
+      .opportunity-content {
+        .opportunity-title {
+          font-size: 15px;
+        }
+        .opportunity-description {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .scroll-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  #extra-curricular {
+    .title {
+      font-size: 18px;
+    }
+
+    .opportunity-card {
+      width: 230px;
+      height: 410px;
+
+      .opportunity-image {
+        height: 200px;
+      }
+
+      .opportunity-content {
+        padding: 8px 20px;
+
+        .opportunity-title {
+          font-size: 13px;
+        }
+        .opportunity-description {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .scroll-btn {
+      width: 25px;
+      height: 25px;
+      font-size: 14px;
+    }
+  }
+}

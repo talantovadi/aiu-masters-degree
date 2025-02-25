@@ -1,0 +1,487 @@
+// программы магистра
+#section-programs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+#programs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 0px 20px;
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .program-subtext {
+    color: #666;
+  }
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.program-card {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.02);
+    border-color: #d72828;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .program-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .program-icon {
+    width: 80px;
+    height: 80px;
+    background: #d72828;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .program-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .program-subtitle {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .program-text {
+    font-size: 15px;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  .expand-btn {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #d72828;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #b71c1c;
+      cursor: pointer;
+    }
+  }
+
+  .expanded-content {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+
+    h3 {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
+
+// доп инфо
+.more-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  // margin: 40px auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+}
+
+.info-icon {
+  font-size: 50px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d72828;
+  margin-bottom: 5px;
+}
+
+.info-text {
+  font-size: 16px;
+  color: #333;
+}
+
+// доки для поступления
+
+.documents-section {
+  padding: 0px 20px;
+  text-align: left;
+
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+}
+
+.documents-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .check-icon {
+    color: #d72828;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+}
+
+// заметка иностранцам
+
+.foreign-note {
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0px 0px 100px;
+  border-left: 4px solid #d72828;
+  border-right: 4px solid #d72828;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  // max-width: 800px;
+
+  h4 {
+    color: #d72828;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1440px) {
+  #programs {
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .program-card {
+    .program-title {
+      font-size: 26px;
+    }
+    .expand-btn {
+      font-size: 16px;
+    }
+  }
+
+  .info-title {
+    font-size: 22px;
+  }
+
+  .info-text {
+    font-size: 20px;
+  }
+
+  .documents-section {
+    h4 {
+      font-size: 26px;
+    }
+  }
+
+  .documents-list {
+    li {
+      font-size: 20px;
+    }
+
+    .check-icon {
+      font-size: 22px;
+    }
+  }
+
+  .foreign-note {
+    h4 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #programs {
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .program-card {
+    .program-title {
+      font-size: 24px;
+    }
+    .expand-btn {
+      font-size: 15px;
+    }
+  }
+
+  .info-title {
+    font-size: 20px;
+  }
+
+  .info-text {
+    font-size: 18px;
+  }
+
+  .documents-section {
+    h4 {
+      font-size: 24px;
+    }
+  }
+
+  .documents-list {
+    li {
+      font-size: 18px;
+    }
+
+    .check-icon {
+      font-size: 20px;
+    }
+  }
+
+  .foreign-note {
+    h4 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  #programs {
+    h1 {
+      font-size: 26px;
+    }
+  }
+
+  .program-card {
+    .program-title {
+      font-size: 20px;
+    }
+  }
+
+  .documents-section {
+    h4 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #programs {
+    h1 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .program-subtext {
+      font-size: 14px;
+    }
+  }
+
+  .program-card {
+    .program-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+    }
+
+    .program-title {
+      font-size: 16px;
+    }
+
+    .expand-btn {
+      font-size: 12px;
+    }
+  }
+
+  .documents-section {
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  .documents-list {
+    li {
+      font-size: 14px;
+    }
+  }
+
+  .info-icon {
+    font-size: 34px;
+  }
+
+  .info-title {
+    font-size: 16px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .foreign-note {
+    h4 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  #programs {
+    h1 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .program-subtext {
+      font-size: 12px;
+    }
+  }
+
+  .program-card {
+    .program-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+
+    .program-title {
+      font-size: 14px;
+    }
+
+    .expand-btn {
+      font-size: 12px;
+    }
+  }
+
+  .documents-section {
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  .documents-list {
+    li {
+      font-size: 12px;
+    }
+  }
+
+  .info-icon {
+    font-size: 32px;
+  }
+
+  .info-title {
+    font-size: 14px;
+  }
+
+  .info-text {
+    font-size: 12px;
+  }
+
+  .foreign-note {
+    h4 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}

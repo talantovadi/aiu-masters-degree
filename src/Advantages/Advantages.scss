@@ -1,0 +1,182 @@
+#advantages {
+  padding: 100px 20px;
+  text-align: left;
+  background-color: #f9f9f9;
+
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .section-description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .advantage-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background: #f8f8f8;
+      transform: translateX(5px);
+    }
+  }
+
+  .advantage-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d72828;
+    min-width: 50px;
+  }
+
+  .advantage-content {
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #advantages {
+
+
+    .section-title {
+      font-size: 32px;
+    }
+
+    .section-description {
+      font-size: 20px;
+    }
+
+    .advantage-content {
+      h3 {
+        font-size: 22px;
+      }
+
+      p{
+        font-size: 20px;
+      }
+    }
+
+    .advantage-number{
+      font-size: 40px;
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #advantages {
+
+
+    .section-title {
+      font-size: 30px;
+    }
+
+    .section-description {
+      font-size: 18px;
+    }
+
+    .advantage-content {
+      h3 {
+        font-size: 20px;
+      }
+
+      p{
+        font-size: 18px;
+      }
+    }
+
+    .advantage-number{
+      font-size: 38px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  #advantages{
+    .section-title{
+      font-size: 26px;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #advantages {
+
+
+    .section-title {
+      font-size: 22px;
+    }
+
+    .section-description {
+      font-size: 14px;
+    }
+
+    .advantage-content {
+      h3 {
+        font-size: 16px;
+      }
+
+      p{
+        font-size: 14px;
+      }
+    }
+
+    .advantage-number{
+      font-size: 34px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  #advantages {
+
+
+    .section-title {
+      font-size: 18px;
+    }
+
+    .section-description {
+      font-size: 12px;
+    }
+
+    .advantage-content {
+      h3 {
+        font-size: 14px;
+      }
+
+      p{
+        font-size: 12px;
+      }
+    }
+
+    .advantage-number{
+      font-size: 30px;
+    }
+  }
+}
