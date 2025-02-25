@@ -203,7 +203,7 @@
           font-size: 15px;
         }
         .opportunity-description {
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }
@@ -245,7 +245,7 @@
           font-size: 15px;
         }
         .opportunity-description {
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }
@@ -254,6 +254,14 @@
       width: 30px;
       height: 30px;
       font-size: 13px;
+
+      &.left {
+        bottom: -53px;
+      }
+
+      &.right {
+        bottom: -53px;
+      }
     }
   }
 }
