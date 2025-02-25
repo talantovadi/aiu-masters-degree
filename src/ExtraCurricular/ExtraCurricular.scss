@@ -22,6 +22,7 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
     width: 80%;
+    height: 470px;
   }
 
   .cards-container::-webkit-scrollbar {
@@ -188,7 +189,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 768px) {
   #extra-curricular {
     .title {
       font-size: 22px;
@@ -196,8 +197,50 @@
 
     .opportunity-card {
       width: 300px;
-      height: 405px;
+      height: 460px;
       .opportunity-content {
+        .opportunity-title {
+          font-size: 15px;
+        }
+        .opportunity-description {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .scroll-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 15px;
+
+      &.left {
+        bottom: -53px;
+      }
+
+      &.right {
+        bottom: -53px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  #extra-curricular {
+    .title {
+      font-size: 22px;
+    }
+
+    .opportunity-card {
+      width: 230px;
+      height: 460px;
+
+      .opportunity-image {
+        height: 200px;
+      }
+
+      .opportunity-content {
+        padding: 8px 20px;
+
         .opportunity-title {
           font-size: 15px;
         }
@@ -211,48 +254,6 @@
       width: 30px;
       height: 30px;
       font-size: 13px;
-
-      &.left {
-        bottom: -53px;
-      }
-
-      &.right {
-        bottom: -53px;
-      }
     }
   }
 }
-
-// @media (min-width: 320px) and (max-width: 479px) {
-//   #extra-curricular {
-//     .title {
-//       font-size: 18px;
-//     }
-
-//     .opportunity-card {
-//       width: 230px;
-//       height: 410px;
-
-//       .opportunity-image {
-//         height: 200px;
-//       }
-
-//       .opportunity-content {
-//         padding: 8px 20px;
-
-//         .opportunity-title {
-//           font-size: 13px;
-//         }
-//         .opportunity-description {
-//           font-size: 12px;
-//         }
-//       }
-//     }
-
-//     .scroll-btn {
-//       width: 25px;
-//       height: 25px;
-//       font-size: 14px;
-//     }
-//   }
-// }
