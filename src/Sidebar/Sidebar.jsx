@@ -12,27 +12,24 @@ const Sidebar = ({ isOpen }) => {
   const [activeSection, setActiveSection] = useState("introduction");
 
   useEffect(() => {
-    // Создаем новый IntersectionObserver
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id); // Устанавливаем активный раздел по ID
+            setActiveSection(entry.target.id);
           }
         });
       },
       {
-        threshold: 0.3, // Когда раздел на 50% виден
+        threshold: 0.3,
       }
     );
 
-    // Настройка observer для всех разделов
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       observer.observe(section);
     });
 
-    // Очистка observer при размонтировании компонента
     return () => {
       sections.forEach((section) => {
         observer.unobserve(section);

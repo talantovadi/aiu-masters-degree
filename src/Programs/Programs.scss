@@ -128,7 +128,6 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  // margin: 40px auto;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -164,7 +163,6 @@
 }
 
 // доки для поступления
-
 .documents-section {
   padding: 0px 20px;
   text-align: left;
@@ -199,7 +197,6 @@
 }
 
 // заметка иностранцам
-
 .foreign-note {
   background: #fff;
   padding: 20px 30px;
@@ -208,7 +205,6 @@
   border-right: 4px solid #d72828;
   border-radius: 8px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  // max-width: 800px;
 
   h4 {
     color: #d72828;
@@ -419,69 +415,3 @@
     }
   }
 }
-
-// @media (min-width: 320px) and (max-width: 479px) {
-//   #programs {
-//     h1 {
-//       font-size: 18px;
-//     }
-
-//     p {
-//       font-size: 12px;
-//     }
-
-//     .program-subtext {
-//       font-size: 12px;
-//     }
-//   }
-
-//   .program-card {
-//     .program-icon {
-//       width: 50px;
-//       height: 50px;
-//       font-size: 20px;
-//     }
-
-//     .program-title {
-//       font-size: 14px;
-//     }
-
-//     .expand-btn {
-//       font-size: 12px;
-//     }
-//   }
-
-//   .documents-section {
-//     h4 {
-//       font-size: 14px;
-//     }
-//   }
-
-//   .documents-list {
-//     li {
-//       font-size: 12px;
-//     }
-//   }
-
-//   .info-icon {
-//     font-size: 32px;
-//   }
-
-//   .info-title {
-//     font-size: 14px;
-//   }
-
-//   .info-text {
-//     font-size: 12px;
-//   }
-
-//   .foreign-note {
-//     h4 {
-//       font-size: 14px;
-//     }
-
-//     p {
-//       font-size: 12px;
-//     }
-//   }
-// }

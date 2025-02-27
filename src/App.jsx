@@ -11,46 +11,15 @@ import Gallery from "./Gallery/Gallery";
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // const [activeSection, setActiveSection] = useState("introduction");
-
   const handleSidebarClick = () => {
     console.log("Current sidebar state:", isSidebarOpen);
     setIsSidebarOpen((prev) => !prev);
   };
 
-  // useEffect(() => {
-  //   // Создаем новый IntersectionObserver
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           setActiveSection(entry.target.id); // Устанавливаем активный раздел по ID
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.3, // Когда раздел на 50% виден
-  //     }
-  //   );
-
-  //   // Настройка observer для всех разделов
-  //   const sections = document.querySelectorAll("section");
-  //   sections.forEach((section) => {
-  //     observer.observe(section);
-  //   });
-
-  //   // Очистка observer при размонтировании компонента
-  //   return () => {
-  //     sections.forEach((section) => {
-  //       observer.unobserve(section);
-  //     });
-  //   };
-  // }, []);
-
   return (
     <div>
       <div className="box">
-        <Sidebar isOpen={isSidebarOpen}/>
+        <Sidebar isOpen={isSidebarOpen} />
 
         <main className={`content ${isSidebarOpen ? "" : "full-screen"}`}>
           <Introduction handleSidebarClick={handleSidebarClick} />
